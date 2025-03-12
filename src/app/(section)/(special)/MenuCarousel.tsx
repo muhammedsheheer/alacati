@@ -306,7 +306,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="z-50 flex w-full flex-col items-center gap-2">
+      {/* bg-[url('/images/home/reserve/bg1.png')] bg-center bg-no-repeat */}
+      <div className="z-50 flex h-full w-full flex-col items-center gap-2">
         <div className="embla-menu">
           <div className="embla-menu__viewport" ref={emblaRef}>
             <div className="embla-menu__container">

@@ -1,74 +1,58 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="relative h-full w-full bg-[#445AA8] py-12 md:py-28">
-      <div className="absolute right-[33%] top-[15%] hidden md:block">
+    <section className="relative h-full w-full bg-[#611326] px-4 py-12 md:py-28">
+      <div className="absolute left-0 top-[25%] z-10 hidden md:block">
         <Image
-          src={"/images/home/about/first.png"}
-          width={281}
-          height={74}
+          src="/images/home/about/left.png"
+          width={188}
+          height={56}
           alt="logo"
-          className="h-[380px] w-[400px]"
+          className="h-[900px] w-full"
         />
       </div>
-      <div className="absolute right-[15%] top-[20%] z-10 hidden md:block">
+      <div className="absolute right-0 top-[5%] z-10 hidden md:block">
         <Image
-          src={"/images/home/about/cup.png"}
-          width={281}
-          height={74}
+          src="/images/home/about/right.png"
+          width={188}
+          height={56}
           alt="logo"
-          className="h-[400px] w-[400px]"
+          className="h-[900px] w-full"
         />
       </div>
-      <div className="absolute right-0 top-[30%] hidden md:block">
-        <Image
-          src={"/images/home/about/second.png"}
-          width={281}
-          height={74}
-          alt="logo"
-          className="h-[350px] w-[350px]"
-        />
+      <div className="absolute inset-0 top-10 z-50 flex justify-center md:top-20">
+        <h3 className="font-cormorant text-center text-4xl font-[500] uppercase text-[#fff] md:text-8xl">
+          We do our best to <br /> serve pure and simple <br /> Turkish cuisine.
+        </h3>
       </div>
-      <div className="flex w-full flex-col gap-2 py-4 pl-4 pr-4 md:w-[40%] md:py-12 md:pl-28 md:pr-0">
-        <h1 className="font-road_rage text-5xl font-[400] uppercase tracking-[7px] text-[#fff] md:text-6xl md:tracking-[10.5px]">
-          ABOUT US
-        </h1>
-        <p className="font-luckiest_guy w-full max-w-[400px] text-sm font-[400] lowercase tracking-[6px] text-[#fff] md:px-0 md:text-base">
-          Welcome to CAFE, where the coffee is hot, the vibes are cool, and the
-          funk never stops! We’re not your average café—we’re a flavor factory,
-          a groove station, and a caffeine-fueled creativity hub all rolled into
-          one.
-        </p>
-        <div className="relative h-[400px] py-28 md:hidden">
-          <div className="absolute left-0 top-8">
-            <Image
-              src={"/images/home/about/first.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="h-[200px] w-full"
-            />
-          </div>
-          <div className="absolute left-[25%] top-[20%] z-10">
-            <Image
-              src={"/images/home/about/cup.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="h-[200px] w-full"
-            />
-          </div>
-          <div className="absolute -right-8 bottom-8">
-            <Image
-              src={"/images/home/about/second.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="h-[200px] w-full"
-            />
-          </div>
+      <div className="flex flex-col items-center justify-center gap-6 pt-4 md:gap-8 md:pt-32">
+        <div className="flex flex-col items-center justify-center">
+          <Image
+            src="/images/home/about/image.png"
+            width={188}
+            height={56}
+            alt="logo"
+            className="z-40 h-[500px] w-full md:h-[1000px]"
+          />
+          <p className="font-cormorant w-full max-w-[700px] text-center text-base font-[400] uppercase text-[#fff] md:text-lg">
+            Alacati Grill is situated in the lovely Market Town of Daventry. Our
+            restaurant is family run with Mahmut (Ata) Raydemir and his lovely
+            wife, Pammy Raydemir at the helm and an amazing support team working
+            together to bring you a taste of Turkey. We strive to serve you the
+            very best quality grill meat. Our authentic Turkish menu has been
+            designed with pride to offer the best selection of Turkish Cuisine.
+            We serve authentic Turkish Cuisine to Takeaway to Daventry and the
+            surrounding areas
+          </p>
+        </div>
+        <div>
+          <Button className="font-cormorant rounded-none bg-transparent px-6 py-6 text-center text-sm font-[700] uppercase tracking-[4.5px] text-[#fff] ring-1 ring-[#FBF1E3] hover:bg-[#fff] hover:text-[#000]">
+            <Link href={"/table-booking"}>Book Now</Link>
+          </Button>
         </div>
       </div>
     </section>

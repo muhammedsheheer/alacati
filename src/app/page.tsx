@@ -7,8 +7,8 @@ import About from "./(section)/About";
 import Menu from "./(section)/Menu";
 import Reserve from "./(section)/Reserve";
 import Follow from "./(section)/Follow";
-import Heart from "./(section)/Heart";
 import Explore from "./(section)/Explore";
+import Special from "./(section)/(special)/Special";
 
 export default function HomePage() {
   return (
@@ -17,9 +17,9 @@ export default function HomePage() {
         <Navbar position="absolute" />
         <Hero />
         <About />
-        <Heart />
         <Explore />
         <Menu />
+        <Special />
         <Reserve />
         <Reviews />
         <Follow />
