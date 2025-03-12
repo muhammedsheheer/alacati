@@ -9,12 +9,14 @@ import {
   Luckiest_Guy,
   Playfair_Display,
   Poppins,
+  Cormorant,
+  Manrope,
 } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Cafe",
-  description: "Cafe",
+  title: "Alacati",
+  description: "Alacati",
   icons: [{ rel: "icon", url: "/images/home/hero/logo.png", sizes: "11x11" }],
 };
 
@@ -24,9 +26,21 @@ const inter = Inter({
   weight: ["400"],
 });
 
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
+});
+
 const playfair_display = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair_display",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
   weight: ["400", "500", "600", "700", "800"],
 });
 
@@ -61,6 +75,8 @@ export default function RootLayout({
           luckiest_guy.variable,
           playfair_display.variable,
           poppins.variable,
+          cormorant.variable,
+          manrope.variable,
         )}
       >
         <Providers>{children}</Providers>

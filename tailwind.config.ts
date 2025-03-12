@@ -13,6 +13,8 @@ export default {
         playfair_display: ["var(--font-playfair_display)", ...fontFamily.sans],
         luckiest_guy: ["var(--font-luckiest_guy)", ...fontFamily.sans],
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        cormorant: ["var(--font-cormorant)", ...fontFamily.sans],
+        manrope: ["var(--font-manrope)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
