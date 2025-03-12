@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const BavetteStory = ({}) => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center bg-[#BB4731] p-4 lg:py-16">
-      <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#BB4731]">
+    <section className="relative flex h-full w-full items-center justify-center bg-[#000] p-4 lg:py-16">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#000]">
         <h2 className="font-oswald text-center text-8xl text-[#fff] md:left-[15%] md:text-8xl">
           The Nova
           <br />
           Story
         </h2>
-        <div className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#BB4731] md:flex-row lg:px-24 lg:py-20">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#000] md:flex-row lg:px-24 lg:py-20">
           <div className="h-full w-full overflow-hidden p-4 md:w-1/2 md:p-0">
             <Image
               src="/images/about-us/image3.jpg"

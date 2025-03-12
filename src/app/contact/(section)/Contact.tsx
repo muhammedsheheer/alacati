@@ -68,12 +68,12 @@ const Contact = ({}) => {
 
   return (
     <section
-      className="flex h-full w-full flex-col items-center justify-center bg-[#445AA8]"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#611326]"
       id="contact"
     >
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
-          <div className="flex w-full flex-col gap-8 bg-[#445AA8] px-6 lg:w-1/2 lg:px-28">
+          <div className="flex w-full flex-col gap-8 bg-[#611326] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
               <p className="font-bai text-lg leading-[4px] text-[#fff]">
                 Contact Us
@@ -143,7 +143,7 @@ const Contact = ({}) => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col bg-[#445AA8] lg:w-1/2 lg:items-center lg:justify-center">
+          <div className="flex w-full flex-col bg-[#611326] lg:w-1/2 lg:items-center lg:justify-center">
             <div className="w-full px-3 lg:w-4/5 lg:px-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="h-full">
@@ -220,7 +220,7 @@ const Contact = ({}) => {
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#BB4731] py-6 text-white hover:text-[#e67b66]"
+                      className="font-bai w-full rounded-2xl bg-[#FDB813] py-6 text-[#000] hover:bg-[#ecb128]"
                       disabled={bookTableMutation.isPending}
                     >
                       Contact US

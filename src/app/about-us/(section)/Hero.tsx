@@ -4,7 +4,7 @@ const Hero = ({}) => {
   return (
     <section
       id="hero"
-      className="flex w-full items-center justify-center bg-[#445AA8] py-6 lg:py-12"
+      className="flex w-full items-center justify-center bg-[#611326] py-6 lg:py-12"
     >
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">

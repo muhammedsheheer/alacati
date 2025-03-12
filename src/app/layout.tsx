@@ -17,7 +17,7 @@ import Providers from "@/app/Providers";
 export const metadata: Metadata = {
   title: "Alacati",
   description: "Alacati",
-  icons: [{ rel: "icon", url: "/images/home/hero/logo.png", sizes: "11x11" }],
+  icons: [{ rel: "icon", url: "/images/logo.png", sizes: "11x11" }],
 };
 
 const inter = Inter({

@@ -6,9 +6,9 @@ import Navbar from "@/components/Navbar";
 const page = ({}) => {
   return (
     <main className="relative flex h-full w-full">
-      <div className="flex h-full w-full flex-col items-center justify-center bg-[#445AA8]">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#611326]">
         <Navbar position="absolute" />
-        <div className="h-[15vh] w-full bg-[#445AA8]" id="hero"></div>
+        <div className="h-[15vh] w-full bg-[#611326]" id="hero"></div>
         <Contact />
         {/* <FAQ /> */}
         <Footer />
