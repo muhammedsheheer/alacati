@@ -25,11 +25,11 @@ const About: React.FC = () => {
         />
       </div>
       <div className="absolute inset-0 top-10 z-50 flex justify-center md:top-20">
-        <h3 className="font-cormorant text-center text-4xl font-[500] uppercase text-[#fff] md:text-8xl">
+        <h3 className="text-center font-cormorant text-4xl font-[500] uppercase text-[#fff] md:text-8xl">
           We do our best to <br /> serve pure and simple <br /> Turkish cuisine.
         </h3>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 pt-4 md:gap-8 md:pt-32">
+      <div className="relative z-50 flex flex-col items-center justify-center gap-6 pt-4 md:gap-8 md:pt-32">
         <div className="flex flex-col items-center justify-center">
           <Image
             src="/images/home/about/image.png"
@@ -38,7 +38,7 @@ const About: React.FC = () => {
             alt="logo"
             className="z-40 h-[500px] w-full md:h-[1000px]"
           />
-          <p className="font-cormorant w-full max-w-[700px] text-center text-base font-[400] uppercase text-[#fff] md:text-lg">
+          <p className="w-full max-w-[700px] text-center font-cormorant text-base font-[400] uppercase text-[#fff] md:text-lg">
             Alacati Grill is situated in the lovely Market Town of Daventry. Our
             restaurant is family run with Mahmut (Ata) Raydemir and his lovely
             wife, Pammy Raydemir at the helm and an amazing support team working
@@ -50,7 +50,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <div>
-          <Button className="font-cormorant rounded-none bg-transparent px-6 py-6 text-center text-sm font-[700] uppercase tracking-[4.5px] text-[#fff] ring-1 ring-[#FBF1E3] hover:bg-[#fff] hover:text-[#000]">
+          <Button className="z-50 rounded-none bg-transparent px-6 py-6 text-center font-cormorant text-sm font-[700] uppercase tracking-[4.5px] text-[#fff] ring-1 ring-[#FBF1E3] hover:bg-[#fff] hover:text-[#000]">
             <Link href={"/table-booking"}>Book Now</Link>
           </Button>
         </div>
